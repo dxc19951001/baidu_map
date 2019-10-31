@@ -8,7 +8,8 @@ while True:
         url = 'http://api.map.baidu.com/geocoding/v3/'
         address = quote(address) # 由于本文地址变量为中文，为防止乱码，先用quote进行编码
         output = 'json'
-        ak = 'jFY8iufuCkNydTibblUtdBp3TVA2NFWu' # 浏览器端密钥
+        ak = '密钥' 
+        # 浏览器端密钥，需要登陆百度地图申请
         callback = 'showLocation'
         uri = url + '?' + 'address=' + address + '&output=' + output + '&ak=' + ak + '&callback=' + callback
         req = urlopen(uri)
